@@ -1,0 +1,95 @@
+body{
+	padding: 0;
+	margin: 0;
+	background: #333;
+	font-family: arial;
+}
+.clr{clear: both;}
+
+.pic_port img{
+	width: 100%;
+}
+.pic_port{
+	cursor: pointer;
+	max-width: 300px;
+	max-height: 300px;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 5px 10px;
+	border: 0px solid #e5e5e5;
+	box-shadow: 0 0 3px #000;
+	
+}
+.cont_hover{
+	padding: 5px 10px;
+	background: url('../img/dark_transp.png');
+	position: absolute;	
+	display: block;
+	height: 100%;
+	z-index: 999;
+	color: #fff;
+	margin:5px 0 0 0;
+	transition: margin 0.3s ease-in-out;
+	-moz-transition: margin 0.3s ease-in-out;
+	-webkit-transition: margin 0.3s ease-in-out;
+	box-shadow: 0 0 3px #333;
+	
+}
+.pic_port:hover .cont_hover,.pic_port:focus .cont_hover{
+	margin:-160px 0 0 0;
+	transition: margin 0.3s ease-in-out;
+	-moz-transition: margin 0.3s ease-in-out;
+	-webkit-transition: margin 0.3s ease-in-out;
+}
+.cont_hover p.tit{
+	font-size:20px;
+	text-shadow: 0 1px 2px #333;
+	font-family:bree-serif, serif;
+	font-weight: normal;
+	}
+p{
+	font-size: 12px;
+	text-shadow: 0 1px 2px #333;
+}
+
+a.bt1, a.bt2{
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	display: block;
+	float: left;
+	font-size: 11px;
+	margin-top:20px;
+	border-radius: 5px;
+}
+a.bt1{background: #ce3939; margin-right:10px; transition: background 0.2s linear;}
+a.bt1:hover{background: #ff4343; transition: background 0.2s linear;}
+a.bt2{background: #606060; transition: background 0.2s linear;}
+a.bt2:hover{background: #7c7c7c; transition: background 0.2s linear;}
+
+/*Icones redes sociais*/
+
+.ico_twitter,.ico_pinterest,.ico_behance,.ico_dribbble{
+	background: url('../img/social_icons.png');
+  width: 30px;
+  height: 29px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  font-size: 0;
+  transition: background 0.2s linear;
+ 
+}
+.ico_pinterest{background-position: 0px 0;}
+.ico_pinterest:hover{background-position: 0 -29px;}
+
+.ico_twitter{background-position: -29px 0;}
+.ico_twitter:hover{background-position: -29px -29px;}
+
+.ico_dribbble{background-position: -58px 0;}
+.ico_dribbble:hover{background-position: -58px -29px;}
+
+.ico_behance{background-position: -87px 0;}
+.ico_behance:hover{background-position:-87px -29px;}
